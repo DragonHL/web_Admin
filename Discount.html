@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount</title>
+
+
+
+    <!-- link css -->
+    <link href="./css/Overview.css" rel="stylesheet">
+    <link href="./css/Container_Body_Table.css" rel="stylesheet">
+    <link href="./css/Footer.css" rel="stylesheet">
+
+    <!-- Use fontawesome -->
+    <script src="https://kit.fontawesome.com/f35a773c29.js" crossorigin="anonymous"></script>
+
+    <!-- font google -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Roboto:wght@100&display=swap&Mogra&display=swap&Stalemate&display=swap"
+        rel="stylesheet"
+
+
+
+    <!-- library script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="./js/Overview.js"></script>
+
+
+    <!-- ----------------------------------------- -->
+    <!-- DataTables link of css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+
+    <!-- DataTables script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
+
+
+    <!-- ---------------------------------- -->
+
+
+
+</head>
+
+<body class="body">
+
+
+
+    <div class="header">
+
+        <div class="logo-header">
+            <p class="titleLogoHeader1">My</p>
+            <p class="titleLogoHeader2">Restaurant</p>
+        </div>
+
+        <div class="navbar-header">
+
+            <div class="iconMenu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <!-- Search form -->
+            <div class="search">
+                <input class="form-control iSearch" type="text" placeholder="Search..." aria-label="Search">
+                <i class="fas fa-search"></i>
+            </div>
+
+            <!-- information -->
+            <div class="informationAdmin">
+                <!-- <div class="information"> -->
+                <p class="nameAdminHeader">Bill Gates</p>
+
+                <img src="https://image.thanhnien.vn/1080/uploaded/nthanhluan/2020_04_18/billgates_dlid.jpg"
+                    alt="Image Admin" width="37px" height="37px" class="imageAdminHeader" />
+                <!-- </div> -->
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="side-bar">
+        <div class="informationAdmin-SideBar">
+            <a class="informationA" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                aria-controls="collapseExample">
+
+                <img src="https://image.thanhnien.vn/1080/uploaded/nthanhluan/2020_04_18/billgates_dlid.jpg"
+                    alt="Image Admin" width="80px" height="80px" class="imageAdminSideBar" />
+
+                <p class="nameAminSideBar">Bill Gates </p>
+                <p class="role">Administrator </p>
+                <i class="fas fa-caret-down"></i>
+            </a>
+        </div>
+
+        <!-- menu vertical edit profile and exit website -->
+        <div class="collapse" id="collapseExample">
+            <ul class="nav flex-column">
+                <li class="nav-item-vertical">
+                    <a class="nav-link-vertical active " href="#">Edit Profile</a>
+                </li>
+                <li class="nav-item-vertical ">
+                    <a class="nav-link-vertical" href="#">Exit</a>
+                </li>
+
+            </ul>
+        </div>
+
+        <!-- Title dash board -->
+        <h4 class="titleDasboard">Dasdboard</h4>
+
+        <!-- List menu dash board -->
+        <ul class="list-menu">
+            <li>
+                <a href="./Admin Overview.html">
+                    <i class="fas fa-chart-pie"></i>
+                    <p>Admin Overview</p>
+                </a>
+            </li>
+            <li>
+                <a href="./Customers Overview .html">
+                    <i class="fas fa-users"></i>
+                    <p>Custommer Overview</p>
+                </a>
+            </li>
+            <li>
+                <a href="./Employees Overview.html">
+                    <i class="fas fa-user-tie"></i>
+                    <p>Employee Overview</p>
+                </a>
+            </li>
+            <li>
+                <a href="./Kind Food.html">
+                    <i class="fas fa-concierge-bell"></i>
+                    <p>Kind Food</p>
+                </a>
+            </li>
+            <li>
+                <a href="./Order.html">
+                    <i class="far fa-list-alt"></i>
+                    <p>Order</p>
+                </a>
+            </li>
+            <li>
+                <a href="./Track Order.html">
+                    <i class="fas fa-truck"></i>
+                    <p>Track Order</p>
+                </a>
+            </li>
+            <li>
+                <a href="./Discount.html">
+                    <i class="fas fa-user-tag"></i>
+                    <p>Discount</p>
+                </a>
+            </li>
+            <li>
+                <a href="./Rating.html">
+                    <i class="far fa-star"></i>
+                    <p>Rating</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <div class="container-body">
+        <div class="sub-container">
+            <div class="title-button">
+                <h1 class="titleTable">Kind Food</h1>
+                <a class="btn btn-warning buttonAdd" href="./From Add And Edit Discount.html" role="button">
+                    ADD
+                </a>
+            </div>
+            
+            <table id="example" class="table table-hover " style="width:100%">
+
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Code</th>
+                        <th>Discount</th>
+                        <th>Description</th>
+                        <th>Date Start</th>
+                        <th>Date End</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1346456</td>
+                        <td>999999</td>
+                        <td>10%</td>
+                        <td>SALE 10%</td>
+                        <td>25/10/2020</td>
+                        <td>30/10/2020</td>
+                        <td>
+                            <a class="btn btn-primary buttonEdit btn-table" href="./From Add And Edit Discount.html" role="button">
+                                Edit
+                            </a>
+                        </td>
+                        <td>
+                            <a class="btn btn-danger buttonEdit btn-table" href="" role="button">
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1346456</td>
+                        <td>999999</td>
+                        <td>10%</td>
+                        <td>SALE 10%</td>
+                        <td>25/10/2020</td>
+                        <td>30/10/2020</td>
+                        <td>
+                            <a class="btn btn-primary buttonEdit btn-table" href="./From Add And Edit Discount.html" role="button">
+                                Edit
+                            </a>
+                        </td>
+                        <td>
+                            <a class="btn btn-danger buttonEdit btn-table" href="" role="button">
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1346456</td>
+                        <td>999999</td>
+                        <td>10%</td>
+                        <td>SALE 10%</td>
+                        <td>25/10/2020</td>
+                        <td>30/10/2020</td>
+                        <td>
+                            <a class="btn btn-primary buttonEdit btn-table" href="./From Add And Edit Discount.html" role="button">
+                                Edit
+                            </a>
+                        </td>
+                        <td>
+                            <a class="btn btn-danger buttonEdit btn-table" href="" role="button">
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+    <div class="footer">
+
+
+    </div>
+</body>
+
+</html>
