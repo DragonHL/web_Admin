@@ -2,14 +2,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
-    
 }
+
 
 .body {
     position: relative;
-   
-
 }
 
 /* reset value are duplicated due to use bootstrap */
@@ -174,13 +171,13 @@
     text-align: center;
 }
 
-.nav-item-vertical>a{
+.nav-item-vertical>.linkSideBar{
     color: #989898;
     font-weight: bold;
     text-decoration: none;
 }
 
-.nav-item-vertical>a:hover{
+.nav-item-vertical>.linkSideBar:hover{
     text-decoration: none;
 }
 
@@ -201,7 +198,7 @@
 }
 
 
-.list-menu>li>a {
+.list-menu>li>.linkSideBar {
     display: flex;
     text-decoration: none;
     font-size: 1.2em;
@@ -210,16 +207,16 @@
     align-items: center;
 }
 
-.list-menu>li>a:hover{
+.list-menu>li>.linkSideBar:hover{
     color: #2c2c2c;
 }
 
-.list-menu>li>a>i {
+.list-menu>li>.linkSideBar>i {
     width: 1.5em;
 
 }
 
-.list-menu>li>a>p {
+.list-menu>li>.linkSideBar>p {
     margin-left: 0.6em;
 }
 
